@@ -1,0 +1,57 @@
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+
+a{
+    font-size: 1em;
+    color:white;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+} 
+
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
+
+img {
+    width: 30%;
+    
+}
+
+/* * {
+    border: 2px solid black
+} */
+
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav, footer {
+    text-align: center;
+}
+
+img {
+    width: 80%;
+    /* text-align: center; */
+    display: block;
+    margin: 0 auto;
+}
+
+main p {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+p {
+    width: 80%;
+}
