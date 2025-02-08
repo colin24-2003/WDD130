@@ -1,0 +1,38 @@
+
+
+body{
+    background-color: lightblue;
+    max-width: 600px;
+    margin: 0  auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+h1{
+    color:white;
+    text-align: center;
+}
+
+
+main p{
+    color:white;
+    text-align: center;
+}
+
+ol {
+    font-weight: bold;
+}
+
+img {
+    width: 18%;
+    display: block;
+    margin: o auto;
+
+}
+
+footer {
+    text-align: center;
+}
+
+.font-small {
+    font-size: 1em;
+}

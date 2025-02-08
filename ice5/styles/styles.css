@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+
+}
+
+.dark-bacground{
+    background-color: #737373;
+}
+
+.images img{
+    width: 20%;
+    margin: 5%;
+
+}
+
+
+.images{
+    text-align: center;
+    border:20px solid blue ;
+}
