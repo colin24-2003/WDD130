@@ -271,3 +271,62 @@ footer p a:hover {
         margin-top: 25px;
     }
 }
+
+
+/* Main subpage styles */
+.subpage-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    width: 35%;
+    display: block;
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.info-section {
+    margin-bottom: 40px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.text-content {
+    line-height: 1.6;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-title {
+        font-size: 2em;
+    }
+}
