@@ -1,7 +1,6 @@
-
 /* General Body Styling */
 body {
-    background-color: #fcfbfb;
+    background-color: #E0F7FA;
     font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     margin: 0;
@@ -13,7 +12,6 @@ nav {
     display: flex;
     justify-content: space-around;
 }
-  
 
 h2 {
     margin: 0;
@@ -36,6 +34,8 @@ header {
 
 .logo {
     height: 75px;
+    border: none;
+    box-shadow: none;
 }
 
 .rivers-card .icon, 
@@ -204,8 +204,15 @@ main section img {
 /* Footer Styling */
 footer p {
     font-size: 1.2em;
-    color: black; 
+    color: #fcfbfb; 
 }
+footer p a {
+    color: #fcfbfb;  
+    text-decoration: none;  
+    padding: 5px 10px;  
+    transition: all 0.3s ease;  
+}
+
 footer {
     background-color: #6f7364;
     padding: 25px 50px;
@@ -213,21 +220,43 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
          
-  
-
 footer p a:hover {
+    background-color: #e1d3c0;  
+    color: white;
     text-decoration: underline;
     
 }
-
 
 .social img {
     height: 40px;
     width: 40px;
     margin: 5px;
+    border-radius: 50%;  
+    background-color: transparent;  
+    transition: transform 0.3s ease, background-color 0.3s ease;  
+    padding: 5px;  
+    box-sizing: content-box;  
 }
+
+.social img:hover {
+    transform: scale(1.1);  
+    background-color: rgba(255, 255, 255, 0.2);  
+}
+
+.social a {
+    display: inline-block;
+    background-color: #6f7364;  
+    border-radius: 50%;  
+    overflow: hidden;  
+}
+
+
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -288,6 +317,17 @@ footer p a:hover {
 .hero-img {
     width: 35%;
     display: block;
+    border: 10px solid #d9c2a3;
+    box-shadow: 5px 5px 10px #6f7364;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.hero-img:hover {
+    opacity: 0.8;
+    transform: scale(1.03);  
+    border-color: #c5aa89;
+    box-shadow: 8px 8px 15px #6f7364;
 }
 
 .hero-title {
@@ -318,12 +358,83 @@ footer p a:hover {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    border: 10px solid #d9c2a3;  
+    box-shadow: 5px 5px 10px #6f7364;  
+    transition: all 0.5s ease;  
+    box-sizing: border-box;
+    cursor: pointer; 
+
+}
+
+.image-box img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);  
+    border-color: #c5aa89;  
+    box-shadow: 8px 8px 15px #6f7364;  
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .content-container {
         grid-template-columns: 1fr;
+    }
+    
+    .hero-title {
+        font-size: 2em;
+    }
+}
+
+/* Hero section with background image fade effect */
+.hero-box {
+    position: relative;
+    width: 100%;
+    height: 500px;  
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+    z-index: -1;  
+    border: none;  
+    box-shadow: none;  
+}
+
+/* Create gradient fade effect at the bottom with a more gradual transition */
+.hero-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;  
+    background-image: linear-gradient(to bottom, transparent, rgba(224, 247, 250, 0.8));  
+    z-index: 0;
+}
+
+/* Style for hero title/text */
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;  
+    width: 80%;  
+    text-align: center;
+}
+
+/* Adjust the hero section for smaller screens */
+@media screen and (max-width: 768px) {
+    .hero-box {
+        height: 350px;  
     }
     
     .hero-title {
