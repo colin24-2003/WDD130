@@ -256,6 +256,22 @@ footer p a:hover {
 
 
 
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -441,3 +457,105 @@ footer p a:hover {
         font-size: 2em;
     }
 }
+
+/* new lines below*/
+
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #d9c2a3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(111, 115, 100, 0.3);
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 8px 8px 15px rgba(111, 115, 100, 0.5);
+    border-color: #c5aa89;
+}
+
+.form-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    color: #6f7364;
+    margin-bottom: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #6f7364;
+    font-weight: bold;
+    text-align: left;
+}
+
+input,
+textarea,
+select {
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 1em;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d9c2a3;
+    border-radius: 5px;
+    background-color: #fcfbfb;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #6f7364;
+    box-shadow: 0 0 5px rgba(111, 115, 100, 0.5);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.button-box {
+    text-align: center;
+    margin-top: 2em;
+}
+
+button[type="submit"] {
+    background-color: #d9c2a3;
+    color: #333;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c5aa89;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 1.5em;
+        margin: 20px 15px;
+    }
+    
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
