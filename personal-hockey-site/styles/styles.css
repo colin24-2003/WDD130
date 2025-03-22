@@ -1,3 +1,4 @@
+
 /*  Body Styling */
 body {
     background-color: #f5f5f5;
@@ -47,10 +48,12 @@ nav a {
     color: #333;
     padding: 10px 15px;
     border-bottom: 2px solid transparent;
+    transition: all 0.3s;
 }
 
 nav a:hover {
-    border-bottom: 2px solid #d9c2a3;
+    border-bottom: 2px solid #E7C24F;
+    color: #E7C24F;
 }
 
 nav .button {
@@ -59,11 +62,14 @@ nav .button {
     padding: 10px 15px;
     border-radius: 4px;
     text-decoration: none;
+    transition: all 0.3s;
 }
 
 nav .button:hover {
-    background-color: #555;
+    background-color: #E7C24F;
+    color: #333;
     border-bottom: 2px solid transparent;
+    transform: scale(1.05);
 }
 
 /* Main Content */
@@ -85,8 +91,14 @@ nav .button:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden; 
+    border-radius: 8px;
+    transition: all 0.3s;
 }
 
+.content-block:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
 
 .content-image {
     width: 100%; 
@@ -101,6 +113,10 @@ nav .button:hover {
     line-height: 1.6;
     color: #333;
     margin-bottom: 40px;
+    padding: 20px;
+    border-left: 4px solid #E7C24F;
+    background-color: #fafafa;
+    border-radius: 0 8px 8px 0;
 }
 
 /* Footer  */
@@ -126,11 +142,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .social a:hover {
     transform: scale(1.1);
+    background-color: #E7C24F;
 }
 
 .social img {
@@ -148,6 +166,17 @@ footer {
     overflow: hidden;
     margin-bottom: 40px;
     text-align: center;
+    position: relative;
+}
+
+.hero-image:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #E7C24F, #4ECDC4);
 }
 
 .hero-image img {
@@ -177,12 +206,21 @@ footer {
     text-align: left;
     line-height: 1.6;
     color: #333;
-    padding: 20px 0;
+    padding: 20px;
+    border-left: 3px solid #4ECDC4;
+    background-color: #fafafa;
+    border-radius: 0 8px 8px 0;
 }
 
 .image-column {
     height: 350px;
     overflow: hidden;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.image-column:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .image-column img {
@@ -195,12 +233,18 @@ footer {
 .full-width-text {
     text-align: left;
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border-left: 4px solid #E7C24F;
 }
 
 .full-width-text h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
+    border-left: 4px solid #E7C24F;
+    padding-left: 10px;
 }
 
 /* Three column grid with cards */
@@ -217,6 +261,21 @@ footer {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 100%;
+    transition: all 0.3s;
+    border-top: 3px solid #E7C24F;
+}
+
+.card:nth-child(2) {
+    border-top: 3px solid #4ECDC4;
+}
+
+.card:nth-child(3) {
+    border-top: 3px solid #E7C24F;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -233,6 +292,8 @@ footer {
 .card-content h3 {
     margin-top: 0;
     color: #333;
+    border-left: 3px solid #4ECDC4;
+    padding-left: 8px;
 }
 
 /* Call to action section */
@@ -242,12 +303,25 @@ footer {
     text-align: center;
     border-radius: 8px;
     margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, rgba(231, 194, 79, 0.1), rgba(78, 205, 196, 0.1));
 }
 
 .cta-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.cta-section h2:after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #E7C24F;
+    margin: 10px auto 0;
 }
 
 .cta-button {
@@ -259,10 +333,14 @@ footer {
     text-decoration: none;
     font-weight: bold;
     margin-top: 20px;
+    transition: all 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #555;
+    background-color: #E7C24F;
+    color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* media */
@@ -285,21 +363,6 @@ footer {
         padding: 40px 20px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Responsive Design */
