@@ -1,4 +1,4 @@
-/* Modern College Website Styling */
+
 :root {
     --primary: #008080;
     --secondary: #4cc9f0;
@@ -47,7 +47,7 @@
   }
   
   #logo_link img {
-    max-height: 45px; /* Slightly smaller logo */
+    max-height: 45px; 
     width: auto;
   }
   
@@ -92,7 +92,7 @@
   
   /* Main Content */
   .content-wrapper {
-    padding: 30px 24px; /* Reduced top padding from 60px to 30px */
+    padding: 30px 24px; 
     max-width: 1280px;
     margin: 0 auto;
   }
@@ -188,12 +188,12 @@
     transition: var(--transition);
   }
   
-  /* Page 2 and 3 Specific Styles */
+  /* Page 2 and 3  Styles */
   .hero-image {
     width: 100%;
     height: 400px;
     overflow: hidden;
-    margin-bottom: 40px; /* Reduced from 60px to 40px */
+    margin-bottom: 40px;
     position: relative;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -216,12 +216,12 @@
     transition: var(--transition);
   }
   
-  /* Two column layout */
+
   .two-column-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    margin-bottom: 40px; /* Reduced from 60px to 40px */
+    margin-bottom: 40px; 
     align-items: center;
   }
   
@@ -260,10 +260,10 @@
     transform: scale(1.05);
   }
   
-  /* Full width text section */
+ 
   .full-width-text {
     text-align: left;
-    margin-bottom: 40px; /* Reduced from 60px to 40px */
+    margin-bottom: 40px; 
     padding: 32px;
     background-color: var(--white);
     border-radius: var(--radius);
@@ -279,12 +279,12 @@
     padding-left: 16px;
   }
   
-  /* Three column grid with cards */
+
   .three-column-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
-    margin-bottom: 40px; /* Reduced from 60px to 40px */
+    margin-bottom: 40px; 
   }
   
   .card {
@@ -342,13 +342,13 @@
     font-size: 1.5rem;
   }
   
-  /* Call to action section */
+
   .cta-section {
     background: linear-gradient(135deg, rgba(67, 97, 238, 0.05), rgba(76, 201, 240, 0.1));
-    padding: 60px 40px; /* Reduced from 80px to 60px */
+    padding: 60px 40px;
     text-align: center;
     border-radius: var(--radius);
-    margin-bottom: 40px; /* Reduced from 60px to 40px */
+    margin-bottom: 40px; 
     box-shadow: var(--shadow);
   }
   
@@ -454,8 +454,8 @@
     background-size: cover;
     background-position: center;
     color: var(--white);
-    padding: 80px 24px; /* Reduced from 100px to 80px */
-    margin-bottom: 40px; /* Reduced from 60px to 40px */
+    padding: 80px 24px; 
+    margin-bottom: 40px; 
     border-radius: var(--radius);
     text-align: center;
     box-shadow: var(--shadow);
@@ -498,7 +498,7 @@
   /* Section Titles */
   .section-title {
     text-align: center;
-    margin-bottom: 30px; /* Reduced from 40px to 30px */
+    margin-bottom: 30px;
     position: relative;
     font-size: 2.5rem;
     color: var(--text);
@@ -515,7 +515,7 @@
     border-radius: 2px;
   }
   
-  /* Responsive Design */
+ 
   @media screen and (max-width: 992px) {
     .two-column-layout {
       grid-template-columns: 1fr;
@@ -523,7 +523,7 @@
     }
     
     .hero-banner {
-      padding: 60px 24px; /* Reduced from 80px to 60px */
+      padding: 60px 24px;
     }
     
     .hero-banner h1 {
@@ -534,11 +534,11 @@
   @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
-      padding: 12px; /* Reduced from 16px to 12px */
+      padding: 12px; 
     }
     
     nav {
-      margin-top: 12px; /* Reduced from 16px to 12px */
+      margin-top: 12px; 
       flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
@@ -558,7 +558,7 @@
     }
     
     .cta-section {
-      padding: 50px 24px; /* Reduced from 60px to 50px */
+      padding: 50px 24px; 
     }
     
     .section-title {
@@ -590,7 +590,7 @@
     }
     
     .hero-banner {
-      padding: 40px 20px; /* Reduced from 60px to 40px */
+      padding: 40px 20px; 
     }
     
     .hero-banner h1 {
