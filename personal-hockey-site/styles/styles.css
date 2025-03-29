@@ -1,6 +1,6 @@
 /* Modern College Website Styling */
 :root {
-    --primary: #4361ee;
+    --primary: #008080;
     --secondary: #4cc9f0;
     --accent: #ffbe0b;
     --text: #2b2d42;
@@ -85,7 +85,7 @@
   }
   
   nav .button:hover {
-    background-color: #3046c5;
+    background-color: #008080;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
@@ -384,7 +384,7 @@
   }
   
   .cta-button:hover {
-    background-color: #3046c5;
+    background-color: #008080;
     transform: translateY(-3px) scale(1.03);
     box-shadow: 0 8px 20px rgba(67, 97, 238, 0.4);
   }
